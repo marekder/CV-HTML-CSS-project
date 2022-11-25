@@ -1,0 +1,30 @@
+.clients {
+    width: 100%;
+    display: flex;
+
+    .left {
+        width: 36%;
+        background-color: $bgColorleft2;
+        display: flex;
+    }
+
+    .right {
+        width: 64%;
+        background-color: #9dc6a4;
+        padding: 20px 100px 20px 20px;
+
+
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+
+            list-style: none;
+
+            li {
+                padding: 0 13px;
+            }
+
+        }
+    }
+
+}

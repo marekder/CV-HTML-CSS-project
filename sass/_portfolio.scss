@@ -1,0 +1,142 @@
+.portfolio {
+    width: 100%;
+    display: flex;
+
+    .left {
+        width: 36%;
+        background-color: $bgColorleft1;
+        display: flex;
+    }
+
+    .right {
+        width: 64%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 100px 20px 50px;
+
+
+
+        .photo {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            width: 50%;
+            padding: 10px 10px;
+
+            // &:hover {
+            //     padding: 10px 10px;
+
+            // }
+
+            .title {
+                position: absolute;
+                top: 10%;
+                left: 5%;
+                // translate: -100% -50%;
+                color: #ffffff;
+                font-size: 20px;
+                font-weight: 700;
+                z-index: 4;
+                opacity: 0;
+                text-transform: uppercase;
+                color: $textPortfolioColor;
+            }
+
+            &:hover .title {
+                display: block;
+                // left: 50%;
+                // translate: -50% -50%;
+                // transition: 300ms;
+                opacity: 100%;
+                transition: 500ms;
+
+            }
+
+            .line {
+                width: 0;
+                height: 5px;
+                background-color: $lineColor;
+                display: inline;
+                position: absolute;
+                z-index: 4;
+                top: 20%;
+                left: 5%;
+            }
+
+            &:hover .line {
+                display: block;
+                // left: 50%;
+                // translate: -50% -50%;
+                // transition: 300ms;
+                transition-duration: 0.6s;
+                transition-timing-function: ease;
+                transition-delay: 0s;
+                transition-property: all;
+                width: 15%;
+
+
+            }
+
+            p {
+                position: absolute;
+                top: 20%;
+                left: 5%;
+                // translate: -100% -50%;
+                color: #ffffff;
+                z-index: 4;
+                opacity: 0;
+                color: $textPortfolioColor;
+
+            }
+
+            &:hover p {
+                opacity: 100%;
+                transition: 500ms;
+            }
+
+
+
+            img {
+                width: 100%;
+                display: block;
+                transition: 500ms;
+                overflow: hidden;
+
+
+            }
+
+            &:hover img {
+                transform: scale(1.01);
+                /* filter: brightness(50%); */
+                transition: 300ms;
+
+            }
+
+            .overlay {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                background-color: #00000078;
+                z-index: 3;
+                top: 0;
+                left: 0;
+                opacity: 0;
+                transition: 300ms;
+
+            }
+
+            &:hover .overlay {
+                opacity: 1;
+
+            }
+
+        }
+
+
+
+
+
+
+
+    }
+}

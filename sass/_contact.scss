@@ -1,0 +1,17 @@
+.contact {
+    width: 100%;
+    height: 500px;
+    display: flex;
+
+    .left {
+        width: 36%;
+        background-color: $bgColorleft1;
+        display: flex;
+    }
+
+    .right {
+        width: 64%;
+        background-color: #c69d9d;
+        display: flex;
+    }
+}

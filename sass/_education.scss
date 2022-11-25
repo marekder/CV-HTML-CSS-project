@@ -1,0 +1,76 @@
+.education {
+    width: 100%;
+    display: flex;
+
+    .left {
+        width: 36%;
+        background-color: $bgColorleft2;
+        display: flex;
+    }
+
+    .right {
+        width: 64%;
+        background-color: $bgColorright2;
+
+
+        .item {
+            width: 100%;
+            display: flex;
+            padding: 20px 100px 20px 50px;
+
+            .item-left {
+                width: 50%;
+                position: relative;
+                padding-left: 20px;
+                color: $fontColor;
+
+                .item-date {
+                    font-size: 0.6em;
+                    font-weight: 700;
+                    opacity: 0.6;
+                }
+
+                .item-position {
+                    font-size: 0.8em;
+                }
+
+                .item-place {
+                    font-size: 0.6em;
+                    font-weight: 700;
+                    opacity: 0.6;
+                }
+
+                ::before {
+                    content: "";
+                    position: absolute;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: $mainColor;
+                    top: 0;
+                    left: 0;
+                }
+
+                ::after {
+                    content: "";
+                    position: absolute;
+                    width: 2px;
+                    height: 100%;
+                    background-color: $progressBarBgBottomColor;
+                    top: 20px;
+                    left: 4px;
+                }
+            }
+
+            .item-right {
+                width: 50%;
+                line-height: 1.7;
+                color: $fontColor;
+
+            }
+
+        }
+
+    }
+
+}

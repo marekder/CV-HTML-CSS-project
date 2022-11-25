@@ -1,0 +1,28 @@
+.intro {
+    width: 100%;
+    display: flex;
+
+    .left {
+        width: 36%;
+        background-color: $bgColorleft2;
+        display: flex;
+    }
+
+    .right {
+        width: 64%;
+        background-color: $bgColorright2;
+        padding: 20px 100px 20px 50px;
+
+
+        p {
+            font-size: 1.3em;
+            line-height: 1.7;
+            opacity: 0.8;
+            text-align: justify;
+
+            a {
+                color: $mainColor;
+            }
+        }
+    }
+}

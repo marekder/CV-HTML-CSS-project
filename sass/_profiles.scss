@@ -1,0 +1,60 @@
+.profiles {
+    width: 100%;
+    display: flex;
+
+    .left {
+        width: 36%;
+        background-color: $bgColorleft1;
+        display: flex;
+    }
+
+    .right {
+        width: 64%;
+        display: flex;
+
+
+        .prof-container {
+
+            width: 100%;
+            padding: 50px 100px 50px 40px;
+            display: flex;
+            flex-wrap: wrap;
+
+            .sub-container {
+                width: calc(100% / 3);
+                padding: 0px 20px 0px 0px;
+                display: flex;
+
+                .sub-left {
+                    width: 10%;
+                    margin-right: 7px;
+
+                    i {
+                        color: $fontColor;
+                        font-size: 1.5em;
+                        opacity: 0.6;
+                    }
+
+                }
+
+                .sub-right {
+                    width: 90%;
+
+                    h3 {
+                        margin-top: 0;
+                        color: $mainColor;
+                    }
+
+                    p {
+                        font-size: 1.1em;
+                        line-height: 1.7;
+                        opacity: 0.6;
+                    }
+
+                }
+
+            }
+
+        }
+    }
+}

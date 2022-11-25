@@ -1,0 +1,53 @@
+.expertese {
+    width: 100%;
+    display: flex;
+
+    .left {
+        width: 36%;
+        background-color: $bgColorleft1;
+        display: flex;
+    }
+
+    .right {
+        width: 64%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px 100px 20px 50px;
+
+
+        .ex-main {
+
+            width: 50%;
+            display: flex;
+
+
+
+            .ex-left {
+                color: $mainColor;
+                font-weight: 700;
+                font-size: 1.1em;
+                margin: 0;
+                padding: 6px 10px 0 0;
+                opacity: 0.6;
+
+
+            }
+
+            .ex-right {
+                line-height: 1.7;
+                color: $fontColor;
+
+
+
+                h3 {
+                    margin: 0;
+                    padding: 0 0 5px 0;
+
+
+                }
+
+            }
+        }
+    }
+
+}

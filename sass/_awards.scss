@@ -1,0 +1,44 @@
+.awards {
+    width: 100%;
+    display: flex;
+
+    .left {
+        width: 36%;
+        background-color: $bgColorleft2;
+        display: flex;
+    }
+
+    .right {
+        width: 64%;
+        display: flex;
+        padding: 20px 100px 20px 50px;
+        background-color: $bgColorright2;
+
+
+
+        .item {
+            padding: 20px 50px 20px 0;
+            color: $fontColor;
+
+            .line {
+                height: 5px;
+                width: 0;
+                background-color: $mainColor;
+            }
+
+            &:hover .line {
+                transition-duration: 0.6s;
+                transition-timing-function: ease;
+                transition-delay: 0s;
+                transition-property: all;
+                width: 20%;
+
+            }
+
+            p {
+                line-height: 1.7;
+            }
+        }
+    }
+
+}
