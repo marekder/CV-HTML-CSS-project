@@ -10,18 +10,43 @@
 
     .right {
         width: 64%;
-        background-color: #9dc6a4;
+        background-color: $bgColorright2;
         padding: 20px 100px 20px 20px;
 
 
         ul {
             display: flex;
+            list-style: none;
             flex-wrap: wrap;
 
-            list-style: none;
 
             li {
-                padding: 0 13px;
+                width: 25%;
+
+
+
+
+                a {
+
+                    padding: 0 13px;
+
+
+                    img {
+
+                        padding: 10px 10px;
+                        max-width: 80%;
+                        max-height: 80%;
+                        opacity: 0.6;
+
+                    }
+
+                    &:hover img {
+                        opacity: 1;
+                        transition: 500ms;
+                    }
+
+                }
+
             }
 
         }

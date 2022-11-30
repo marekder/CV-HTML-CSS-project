@@ -1,0 +1,66 @@
+.contact {
+    width: 100%;
+    display: flex;
+
+    .left {
+        width: 36%;
+        background-color: $bgColorleft1;
+        display: flex;
+    }
+
+    .right {
+        width: 64%;
+        background-color: #c69d9d;
+        padding: 20px 100px 20px 50px;
+        position: relative;
+
+        .footer-contact {
+            display: flex;
+            position: absolute;
+            width: 80%;
+            justify-content: space-between;
+            padding-right: 50px;
+            border-bottom: 2px solid #ccc;
+
+            .contact-body {
+                color: $footerHeaderColor;
+
+                .contact-top {
+                    font-weight: 600;
+                    font-size: 0.8em;
+
+                }
+
+                .contact-bottom {
+                    font-size: 0.9em;
+                }
+
+            }
+
+
+
+        }
+
+        .brand {
+            width: 80%;
+            position: absolute;
+            margin-top: 200px;
+
+            // translate: 0 -50%;     
+            .name {
+                font-size: 4em;
+                margin: 0;
+                opacity: 0.6;
+                color: $fontColor;
+            }
+
+            .surname {
+                font-size: 4em;
+                margin: -10px 0 0 0;
+                color: $mainColor;
+                font-weight: 700;
+            }
+
+        }
+    }
+}
