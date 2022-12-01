@@ -1,7 +1,6 @@
 .head {
     display: flex;
     height: 100vh;
-    width: 100%;
 
     .left {
         width: 36%;
@@ -22,17 +21,15 @@
 
     .right {
         width: 64%;
-        background-color: $bgColorright2;
+        background-color: #fff;
         padding: 20px 100px 20px 50px;
         position: relative;
 
         .brand {
-            width: 80%;
-            // margin-left: 50px;       
+            width: 87%;
             position: absolute;
             top: 50%;
             translate: 0 -50%;
-
 
             .name {
                 font-size: 4em;
@@ -52,6 +49,7 @@
                 font-size: 1.3em;
                 color: $fontColor;
                 margin: 10px 0 0 0;
+                font-weight: 700;
 
             }
 
@@ -96,7 +94,7 @@
             display: flex;
             position: absolute;
             bottom: 50px;
-            width: 80%;
+            width: 87%;
             justify-content: space-between;
             padding-right: 50px;
             border-top: 2px solid #ccc;
