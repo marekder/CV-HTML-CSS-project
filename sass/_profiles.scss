@@ -58,3 +58,17 @@
         }
     }
 }
+
+@media (max-width: 1000px) {
+
+    .profiles .right .prof-container .sub-container {
+        width: 50%;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .profiles .right .prof-container .sub-container {
+        width: 100%;
+    }
+}
