@@ -6,6 +6,10 @@ export default defineConfig({
         open: true,
         host: true
     },
+    base: "",
+    build: {
+        outDir: "./docs"
+    },
     css: {
         postcss: {
             plugins: [
