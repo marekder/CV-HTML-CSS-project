@@ -1,19 +1,49 @@
 .head {
     display: flex;
-    height: 100vh;
+    flex-wrap: wrap;
+    min-height: 100vh;
 
     .left {
         width: 36%;
         background-color: $bgColorleft2;
 
+        @include breakpoint('large') {
+            width: 25%;
+        }
+
+        @include breakpoint('medium') {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
         .picture {
             display: flex;
             align-items: center;
             justify-content: right;
-            padding-right: 100px;
+            padding-right: 50px;
+
+            @include breakpoint('medium') {
+                padding-right: 0;
+                justify-content: center;
+                padding: 100px 0;
+            }
 
             img {
                 border-radius: 50%;
+                display: block;
+                max-width: 230px;
+                width: 100%;
+                height: auto;
+
+                @include breakpoint('medium') {
+                    max-width: 200px;
+                }
+
+                @include breakpoint('small') {
+                    max-width: 140px;
+                }
             }
         }
 
@@ -24,6 +54,10 @@
         background-color: #fff;
         padding: 20px 100px 20px 50px;
         position: relative;
+
+        @include breakpoint('large') {
+            width: 75%;
+        }
 
         .brand {
             width: 87%;
