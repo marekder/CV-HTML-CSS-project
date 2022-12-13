@@ -24,7 +24,12 @@
 
                 a {
                     font-size: 0.9em;
+                    color: $footerHeaderColor;
 
+                    &:hover {
+                        color: $mainColor;
+                        transition: 500ms;
+                    }
                 }
 
                 .contact-top {
