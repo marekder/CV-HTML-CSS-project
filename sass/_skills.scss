@@ -2,10 +2,33 @@
     width: 100%;
     display: flex;
 
+    @include breakpoint('large') {
+        display: block;
+        transition: 500ms;
+    }
+
+
     .left {
         width: 36%;
         background-color: $bgColorleft2;
         display: flex;
+
+        .header-left {
+
+            @include breakpoint('large') {
+                width: 100%;
+                text-align: left;
+                transition: 500ms;
+            }
+        }
+
+
+        @include breakpoint('large') {
+            width: 100%;
+            text-align: left;
+            transition: 500ms;
+        }
+
     }
 
     .right {
@@ -13,6 +36,12 @@
         background-color: $bgColorright2;
         display: flex;
         padding: 20px 100px 20px 50px;
+
+        @include breakpoint('large') {
+            width: 100%;
+            transition: 500ms;
+        }
+
 
         .progress-bars {
             display: flex;
@@ -63,38 +92,9 @@
 }
 
 
-@media (max-width: 1000px) {
-    .skills .right .progress-bars .item {
-        width: 100%;
-        margin: 0 0 40px 0;
-    }
-}
-
-
-
-// .right .progress-bars .item .bar .bg .cloud {
-//     width: 46px;
-//     height: 32px;
-//     border: 1px solid var(--mainColor);
-//     text-align: center;
-//     line-height: 32px;
-//     border-radius: 5px;
-//     color: var(--mainColor);
-//     position: absolute;
-//     right: -23px;
-//     top: -40px;
-
+// @media (max-width: 1000px) {
+//     .skills .right .progress-bars .item {
+//         width: 100%;
+//         margin: 0 0 40px 0;
+//     }
 // }
-
-// .right .progress-bars .item .bar .bg .cloud::after {
-//     position: absolute;
-//     display: block;
-//     content: "";
-//     width: 10px;
-//     height: 10px;
-//     border-right: 1px solid var(--mainColor);
-//     border-bottom: 1px solid var(--mainColor);
-//     rotate: 45deg;
-//     left: 50%;
-//     translate: -50% -6px;
-//     background-color: var(--bodyBgColor);}
