@@ -23,7 +23,7 @@
             display: flex;
             align-items: center;
             justify-content: right;
-            padding-right: 50px;
+            padding-right: 10%;
             height: 100%;
 
             @include breakpoint('large') {

@@ -11,9 +11,23 @@
     .left {
         width: 36%;
         background-color: $bgColorleft1;
-        display: flex;
+        text-align: right;
+        padding-top: 4px;
 
         .header-left {
+
+            margin: 0;
+            padding-right: 10%;
+
+            h3 {
+                color: $footerHeaderColor
+            }
+
+            h4 {
+                color: $fontColor;
+            }
+
+
 
             @include breakpoint('large') {
                 width: 100%;
@@ -44,7 +58,7 @@
         .prof-container {
 
             width: 100%;
-            padding: 50px 100px 50px 40px;
+            padding: 20px 100px 50px 40px;
             display: flex;
             flex-wrap: wrap;
 
@@ -55,7 +69,7 @@
 
                 .sub-left {
                     width: 10%;
-                    margin-right: 7px;
+                    margin-right: 15px;
 
                     i {
                         color: $fontColor;

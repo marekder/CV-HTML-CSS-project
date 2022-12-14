@@ -11,9 +11,22 @@
     .left {
         width: 36%;
         background-color: $bgColorleft1;
-        display: flex;
+        text-align: right;
+        padding-top: 4px;
 
         .header-left {
+
+            margin: 0;
+            padding-right: 10%;
+
+            h3 {
+                color: $footerHeaderColor
+            }
+
+            h4 {
+                color: $fontColor;
+            }
+
 
             @include breakpoint('large') {
                 width: 100%;
