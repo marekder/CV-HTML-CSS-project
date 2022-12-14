@@ -10,17 +10,22 @@
     .left {
         width: 36%;
         background-color: $bgColorleft2;
-        display: flex;
+        text-align: right;
+
 
         @include breakpoint('large') {
+            display: flex;
             width: 100%;
+            justify-items: flex-end;
+
         }
 
         .header-left {
+            margin: 0;
 
             @include breakpoint('large') {
                 width: 100%;
-                text-align: left;
+                padding-right: 100px;
             }
 
         }

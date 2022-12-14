@@ -1,7 +1,12 @@
 .head {
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     min-height: 100vh;
+
+    @include breakpoint('large') {
+        display: block;
+    }
+
 
     .left {
         width: 36%;
@@ -9,20 +14,9 @@
 
         @include breakpoint('large') {
             width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             background-color: #fff;
             transition: 500ms;
-
-        }
-
-        @include breakpoint('medium') {
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: #fff;
+            height: 40vh;
         }
 
         .picture {
@@ -30,6 +24,7 @@
             align-items: center;
             justify-content: right;
             padding-right: 50px;
+            height: 100%;
 
             @include breakpoint('large') {
                 padding-right: 0;
@@ -37,19 +32,13 @@
                 transition: 500ms;
             }
 
-
-            @include breakpoint('medium') {
-                padding-right: 0;
-                justify-content: center;
-
-            }
-
             img {
                 border-radius: 50%;
-                display: block;
+                // display: block;
                 max-width: 230px;
                 width: 100%;
                 height: auto;
+                margin: auto 0;
 
                 @include breakpoint('large') {
                     max-width: 200px;
@@ -80,6 +69,7 @@
             top: 80%;
             padding: 0;
             transition: 500ms;
+            height: 60vh;
 
         }
 
@@ -102,22 +92,16 @@
             translate: 0 -50%;
 
             @include breakpoint('large') {
-                position: static;
+                // position: static;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
+                // margin: 8% 0 0 0;
+                position: static;
+                translate: 0;
                 transition: 500ms;
 
             }
-
-
-            @include breakpoint('medium') {
-                position: static;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-
 
 
             .name {
