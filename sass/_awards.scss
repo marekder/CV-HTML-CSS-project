@@ -2,10 +2,32 @@
     width: 100%;
     display: flex;
 
+    @include breakpoint('large') {
+        display: block;
+        transition: 500ms;
+    }
+
+
     .left {
         width: 36%;
         background-color: $bgColorleft2;
         display: flex;
+
+        .header-left {
+
+            @include breakpoint('large') {
+                width: 100%;
+                text-align: left;
+                transition: 500ms;
+            }
+        }
+
+        @include breakpoint('large') {
+            width: 100%;
+            text-align: left;
+            transition: 500ms;
+        }
+
     }
 
     .right {
@@ -14,7 +36,10 @@
         padding: 20px 100px 20px 50px;
         background-color: $bgColorright2;
 
-
+        @include breakpoint('large') {
+            width: 100%;
+            transition: 500ms;
+        }
 
         .item {
             padding: 20px 50px 20px 0;
