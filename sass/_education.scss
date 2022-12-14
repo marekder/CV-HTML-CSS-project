@@ -13,6 +13,14 @@
         text-align: right;
         padding-top: 4px;
 
+        @include breakpoint('large') {
+            display: flex;
+            width: 100%;
+            justify-items: flex-end;
+            text-align: left;
+        }
+
+
         .header-left {
 
             margin: 0;
@@ -31,13 +39,8 @@
                 width: 100%;
                 text-align: left;
                 transition: 500ms;
+                padding-left: 50px;
             }
-        }
-
-        @include breakpoint('large') {
-            width: 100%;
-            text-align: left;
-            transition: 500ms;
         }
 
     }

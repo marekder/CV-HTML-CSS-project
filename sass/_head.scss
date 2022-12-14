@@ -161,11 +161,15 @@
 
             .social {
                 display: flex;
-                justify-content: center;
+                width: 86%;
+                justify-content: right;
                 gap: 10px;
+                margin-top: -6%;
 
                 @include breakpoint('large') {
-                    padding-top: 5%;
+                    margin: 0;
+                    padding-top: 2%;
+                    justify-content: center;
                     transition: 500ms;
 
                 }

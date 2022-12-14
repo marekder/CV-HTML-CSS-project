@@ -20,12 +20,13 @@
             display: flex;
             width: 100%;
             justify-items: flex-end;
+            text-align: left;
 
         }
 
         .header-left {
             margin: 0;
-            padding-right: 10%;
+            padding-left: 50px;
 
             h3 {
                 color: $footerHeaderColor
