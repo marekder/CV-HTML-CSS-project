@@ -35,8 +35,8 @@
         }
     }
 
-    @else if $point==wide {
-        @media (min-width: 1000px) {
+    @else if $point==x {
+        @media (max-width: 1100px) {
             @content;
         }
     }

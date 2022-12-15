@@ -64,15 +64,30 @@
             transition: 500ms;
         }
 
+        // @include breakpoint('medium') {
+        //     width: 50%;
+        //     transition: 500ms;
+        // }
 
         .progress-bars {
             display: flex;
             flex-wrap: wrap;
             width: 100%;
 
+
+
             .item {
                 width: 50%;
                 margin: 0 0 40px 0;
+                padding-right: 5%;
+
+                @include breakpoint('medium') {
+                    width: 100%;
+                    flex-wrap: wrap;
+                    transition: 500ms;
+
+                }
+
 
                 .language {
                     margin: 0 0 24px 0;
@@ -82,6 +97,13 @@
                         font-weight: 700;
                         font-size: 1.1em;
 
+                        @include breakpoint('x') {
+                            transition: 500ms;
+                            font-size: 0.9em;
+
+                        }
+
+
                     }
 
                     h3 {
@@ -89,6 +111,13 @@
                         opacity: 0.6;
                         padding: 0 0 0 10px;
                         color: $fontColor;
+
+                        @include breakpoint('x') {
+                            transition: 500ms;
+                            font-size: 0.9em;
+
+                        }
+
 
                     }
                 }
