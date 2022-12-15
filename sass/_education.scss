@@ -59,13 +59,28 @@
         .item {
             width: 100%;
             display: flex;
-            padding: 20px 100px 20px 50px;
+            padding: 20px 50px 20px 50px;
 
             .item-left {
                 width: 50%;
                 position: relative;
                 padding-left: 20px;
                 color: $fontColor;
+
+                @include breakpoint('small') {
+                    padding-right: 10px;
+                }
+
+                h3 {
+
+                    @include breakpoint('small') {
+                        font-size: 0.9em;
+                        transition: 500ms;
+                    }
+
+                }
+
+
 
                 .item-date {
                     font-size: 0.6em;
@@ -109,6 +124,12 @@
                 width: 50%;
                 line-height: 1.7;
                 color: $fontColor;
+
+                @include breakpoint('small') {
+                    font-size: 0.9em;
+                    transition: 500ms;
+                }
+
 
             }
 
