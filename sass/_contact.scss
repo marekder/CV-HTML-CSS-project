@@ -2,12 +2,27 @@
     width: 100%;
     display: flex;
 
+    @include breakpoint('large') {
+        display: block;
+        transition: 500ms;
+    }
+
+
     .left {
         width: 36%;
         background-color: $bgColorleft1;
         text-align: right;
         padding-top: 1%;
         height: 262px;
+
+        @include breakpoint('large') {
+            display: flex;
+            width: 100%;
+            justify-items: flex-end;
+            text-align: left;
+            height: auto;
+        }
+
 
         .header-left {
 
@@ -21,6 +36,14 @@
             h4 {
                 color: $fontColor;
             }
+
+            @include breakpoint('large') {
+                width: 100%;
+                text-align: left;
+                transition: 500ms;
+                padding-left: 50px;
+            }
+
         }
     }
 
@@ -30,6 +53,13 @@
         padding: 20px 100px 20px 50px;
         position: absolute;
         left: 36%;
+
+        @include breakpoint('large') {
+            width: 100%;
+            left: 0;
+            transition: 500ms;
+        }
+
 
         .footer-contact {
             display: flex;

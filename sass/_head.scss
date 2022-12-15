@@ -73,18 +73,6 @@
 
         }
 
-        @include breakpoint('medium') {
-            width: 100%;
-            top: 80%;
-            padding: 0;
-        }
-
-        @include breakpoint('small') {
-            width: 100%;
-        }
-
-
-
         .brand {
             width: 100%;
             position: absolute;
@@ -243,12 +231,23 @@
             }
 
             @include breakpoint('medium') {
-                margin: 0 50px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: 20px;
+
             }
+
+
 
 
             .contact-body {
                 color: $footerHeaderColor;
+
+                // @include breakpoint('medium') {
+                //     display: block;
+                // }
+
 
                 .contact-top {
                     font-weight: 600;

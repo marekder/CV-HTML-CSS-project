@@ -24,7 +24,7 @@
     }
 
     @else if $point==medium {
-        @media (max-width: 720px) {
+        @media (max-width: 700px) {
             @content;
         }
     }
