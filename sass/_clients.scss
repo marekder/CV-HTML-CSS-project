@@ -12,7 +12,7 @@
         width: 36%;
         background-color: $bgColorleft2;
         text-align: right;
-        padding-top: 4px;
+        padding-top: 4%;
 
         @include breakpoint('large') {
             display: flex;
@@ -26,7 +26,6 @@
 
             margin: 0;
             padding-right: 10%;
-            padding-top: 7%;
 
             h3 {
                 color: $footerHeaderColor

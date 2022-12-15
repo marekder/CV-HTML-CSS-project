@@ -72,7 +72,6 @@
             padding: 0;
             transition: 500ms;
             height: 60vh;
-
         }
 
         .brand {
@@ -188,15 +187,6 @@
                         transition: 500ms;
                     }
 
-                    @include breakpoint('medium') {
-                        width: 30px;
-                        height: 30px;
-                        font-size: 1em;
-                        line-height: 25px;
-
-                    }
-
-
                     &:hover {
                         color: $mainColor;
                         background-color: #fff;
@@ -222,21 +212,31 @@
             bottom: 50px;
             width: 87%;
             justify-content: space-between;
-            padding-right: 50px;
             border-top: 2px solid #ccc;
+            padding: 0 30px;
 
             @include breakpoint('large') {
-                margin: 0 50px;
+                width: 100%;
                 transition: 500ms;
             }
 
             @include breakpoint('medium') {
+                width: 100%;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
-                gap: 20px;
+                column-gap: 20px;
+                transition: 500ms;
+
 
             }
+
+            @include breakpoint('small') {
+                justify-content: center;
+                transition: 500ms;
+
+            }
+
 
 
 
