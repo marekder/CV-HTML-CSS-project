@@ -2,11 +2,10 @@
     width: 100%;
     display: flex;
 
-    // @include breakpoint('large') {
-    //     display: block;
-    //     transition: 500ms;
-    // }
-
+    @include breakpoint('large') {
+        display: block;
+        transition: 500ms;
+    }
 
     .left {
         width: 36%;
@@ -14,14 +13,12 @@
         text-align: right;
         padding-top: 1%;
 
-        // @include breakpoint('large') {
-        //     display: flex;
-        //     width: 100%;
-        //     justify-items: flex-end;
-        //     text-align: left;
-        //     height: auto;
-        // }
-
+        @include breakpoint('large') {
+            display: flex;
+            width: 100%;
+            justify-items: flex-end;
+            text-align: left;
+        }
 
         .header-left {
 
@@ -36,12 +33,12 @@
                 color: $fontColor;
             }
 
-            // @include breakpoint('large') {
-            //     width: 100%;
-            //     text-align: left;
-            //     transition: 500ms;
-            //     padding-left: 50px;
-            // }
+            @include breakpoint('large') {
+                width: 100%;
+                text-align: left;
+                transition: 500ms;
+                padding-left: 50px;
+            }
 
         }
     }
@@ -51,11 +48,11 @@
         background-color: #fff;
         padding: 20px 50px 20px 50px;
 
-        // @include breakpoint('large') {
-        //     width: 100%;
-        //     left: 0;
-        //     transition: 500ms;
-        // }
+        @include breakpoint('large') {
+            width: 100%;
+            left: 0;
+            transition: 500ms;
+        }
 
 
         .footer-contact {
@@ -63,6 +60,17 @@
             justify-content: space-between;
             border-bottom: 2px solid #ccc;
             position: relative;
+
+            @include breakpoint('medium') {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                column-gap: 20px;
+                transition: 500ms;
+                padding: 0 0 5% 0;
+            }
+
 
             .contact-body {
                 color: $footerHeaderColor;
@@ -96,6 +104,13 @@
             margin-top: 7%;
             position: relative;
 
+            @include breakpoint('medium') {
+                width: 50%;
+                left: 0;
+                transition: 500ms;
+            }
+
+
             .brand-left {
 
                 .name {
@@ -119,10 +134,18 @@
                 right: 0;
                 bottom: 8%;
 
+                @include breakpoint('medium') {
+                    top: 100%;
+                    left: 0;
+                    transition: 500ms;
+                }
+
+
                 .social {
                     display: flex;
-                    justify-content: right;
+                    justify-content: baseline;
                     gap: 10px;
+                    padding: 5% 0 5% 0;
 
 
 

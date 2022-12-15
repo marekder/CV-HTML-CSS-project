@@ -232,7 +232,7 @@
             }
 
             @include breakpoint('small') {
-                justify-content: center;
+                justify-content: baseline;
                 transition: 500ms;
 
             }
