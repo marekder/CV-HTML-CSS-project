@@ -54,6 +54,15 @@
 
         @include breakpoint('large') {
             width: 100%;
+            font-size: 0.9em;
+            transition: 500ms;
+        }
+
+        @include breakpoint('medium') {
+            font-size: 0.8em;
+            transition: 500ms;
+
+
         }
 
 
@@ -61,6 +70,15 @@
 
             width: 50%;
             display: flex;
+
+            @include breakpoint('medium') {
+                width: 100%;
+                flex-wrap: wrap;
+                transition: 500ms;
+
+            }
+
+
 
 
 

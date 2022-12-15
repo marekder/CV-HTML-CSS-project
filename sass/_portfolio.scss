@@ -71,6 +71,12 @@
             width: 50%;
             padding: 10px 10px 10px 0;
 
+            @include breakpoint('large') {
+                width: 100%;
+                transition: 500ms;
+            }
+
+
             // &:hover {
             //     padding: 10px 10px;
 
@@ -160,12 +166,5 @@
 
         }
 
-    }
-}
-
-@media (max-width: 900px) {
-
-    .portfolio .right .photo {
-        width: 100%;
     }
 }
