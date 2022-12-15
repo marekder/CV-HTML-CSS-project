@@ -12,7 +12,6 @@
         width: 36%;
         background-color: $bgColorleft1;
         text-align: right;
-        padding-top: 4px;
 
         @include breakpoint('large') {
             display: flex;
