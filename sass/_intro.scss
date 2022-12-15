@@ -5,7 +5,6 @@
     @include breakpoint('large') {
         display: block;
         transition: 500ms;
-
     }
 
 
@@ -13,8 +12,6 @@
         width: 36%;
         background-color: $bgColorleft2;
         text-align: right;
-        padding-top: 3%;
-
 
         @include breakpoint('large') {
             display: flex;
@@ -26,7 +23,7 @@
 
         .header-left {
             margin: 0;
-            padding-left: 50px;
+            padding-right: 10%;
 
             h3 {
                 color: $footerHeaderColor
@@ -39,7 +36,7 @@
 
             @include breakpoint('large') {
                 width: 100%;
-                padding-right: 100px;
+                padding-left: 50px;
             }
 
         }
@@ -49,10 +46,12 @@
     .right {
         width: 64%;
         background-color: $bgColorright2;
-        padding: 20px 100px 20px 50px;
+        padding: 20px 50px 20px 50px;
 
         @include breakpoint('large') {
             width: 100%;
+            transition: 500ms;
+
         }
 
         p {
