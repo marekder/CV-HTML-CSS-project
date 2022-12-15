@@ -61,6 +61,19 @@
             opacity: 0.8;
             text-align: justify;
 
+            @include breakpoint('large') {
+                font-size: 1.1em;
+                transition: 500ms;
+            }
+
+
+            @include breakpoint('medium') {
+                font-size: 0.9em;
+                transition: 500ms;
+
+            }
+
+
             a {
                 color: $mainColor;
             }
