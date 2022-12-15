@@ -46,24 +46,31 @@
     }
 
     .right {
-        width: 64%;
         display: flex;
+        width: 64%;
         padding: 20px 100px 20px 50px;
         background-color: $bgColorright2;
 
         @include breakpoint('large') {
             width: 100%;
+            flex-wrap: wrap;
             transition: 500ms;
         }
 
         .item {
-            padding: 20px 20px 20px 0;
+            padding: 20px 50px 20px 0;
             color: $fontColor;
 
             .line {
                 height: 5px;
                 width: 0;
                 background-color: $mainColor;
+
+                @include breakpoint('x') {
+                    width: 20%;
+                    transition: 500ms;
+                }
+
             }
 
             &:hover .line {
