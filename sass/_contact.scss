@@ -6,7 +6,8 @@
         width: 36%;
         background-color: $bgColorleft1;
         text-align: right;
-        padding-top: 4px;
+        padding-top: 1%;
+        height: 262px;
 
         .header-left {
 
@@ -27,12 +28,14 @@
         width: 64%;
         background-color: #fff;
         padding: 20px 100px 20px 50px;
-        position: relative;
+        position: absolute;
+        left: 36%;
 
         .footer-contact {
             display: flex;
             justify-content: space-between;
             border-bottom: 2px solid #ccc;
+            position: relative;
 
             .contact-body {
                 color: $footerHeaderColor;
@@ -63,19 +66,20 @@
 
         .brand {
             width: 100%;
-            margin-top: 100px;
+            margin-top: 10%;
             position: relative;
 
-            .data-left {
+            .brand-left {
+
                 .name {
-                    font-size: 4em;
+                    font-size: 3em;
                     margin: 0;
                     opacity: 0.6;
                     color: $fontColor;
                 }
 
                 .surname {
-                    font-size: 4em;
+                    font-size: 3em;
                     margin: -10px 0 0 0;
                     color: $mainColor;
                     font-weight: 700;
@@ -83,7 +87,7 @@
 
             }
 
-            .data-right {
+            .brand-right {
                 position: absolute;
                 right: 0;
                 bottom: 8%;
