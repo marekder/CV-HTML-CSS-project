@@ -10,7 +10,7 @@
 
     .left {
         width: 36%;
-        background-color: $bgColorleft2;
+        background-color: $bgColorLeft2;
         text-align: right;
 
         @include breakpoint('large') {
@@ -44,7 +44,7 @@
 
     .right {
         width: 64%;
-        background-color: $bgColorright2;
+        background-color: $bgColorRight2;
         padding: 20px 50px 20px 50px;
 
         @include breakpoint('large') {
