@@ -1,0 +1,37 @@
+.change-theme {
+
+    display: block;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: $changeThemeBgColor;
+    line-height: 40px;
+
+    .change-theme {
+
+        color: $changeThemeColor;
+    }
+}
+
+.light {
+
+    .change-theme {
+
+        .fa-sun {
+            display: none;
+        }
+    }
+}
+
+.dark {
+
+    .change-theme {
+
+        .fa-moon {
+
+            display: none;
+        }
+    }
+}
