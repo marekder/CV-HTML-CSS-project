@@ -10,7 +10,7 @@
 
     .left {
         width: 36%;
-        background-color: $bgColorLeft1;
+        background-color: var(--bgColorLeft1);
         text-align: right;
         padding-top: 4px;
 
@@ -58,7 +58,7 @@
         display: flex;
         flex-wrap: wrap;
         padding: 20px 40px 20px 50px;
-        background-color: $bgColorRight1;
+        background-color: var(--bgColorRight1);
 
         @include breakpoint('large') {
             width: 100%;

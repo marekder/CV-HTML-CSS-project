@@ -6,12 +6,12 @@
     height: 40px;
     text-align: center;
     border-radius: 50%;
-    background-color: $changeThemeBgColor;
+    background-color: var(--changeThemeBgColor);
     line-height: 40px;
 
     .change-theme {
 
-        color: $changeThemeColor;
+        color: var(--changeThemeColor);
     }
 }
 

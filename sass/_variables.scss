@@ -2,23 +2,43 @@
 
 .light {
 
-    $bgColorLeft1: #FBFBFB;
-    $bgColorLeft2: #F8F8F8;
-    $bgColorRight1: #FFF;
-    $bgColorRight2: #FCFCFC;
-    $changeThemeBgColor: #FBFBFB;
+    --bgColorLeft1: #FBFBFB;
+    --bgColorLeft2: #F8F8F8;
+    --bgColorRight1: #FFF;
+    --bgColorRight2: #FCFCFC;
+    --changeThemeBgColor: #FBFBFB;
 
 }
 
 
 .dark {
-    $bgColorLeft1: #2B2C2C;
-    $bgColorLeft2: #292A2A;
-    $bgColorRight1: #2D2E2E;
-    $bgColorRight2: #2B2C2C;
-    $changeThemeBgColor: #2B2C2C;
+    --bgColorLeft1: #2B2C2C;
+    --bgColorLeft2: #292A2A;
+    --bgColorRight1: #2D2E2E;
+    --bgColorRight2: #2B2C2C;
+    --changeThemeBgColor: #2B2C2C;
 
 }
+
+// .light {
+
+//     $bgColorLeft1: #FBFBFB;
+//     $bgColorLeft2: #F8F8F8;
+//     $bgColorRight1: #FFF;
+//     $bgColorRight2: #FCFCFC;
+//     $changeThemeBgColor: #FBFBFB;
+
+// }
+
+
+// .dark {
+//     $bgColorLeft1: #2B2C2C;
+//     $bgColorLeft2: #292A2A;
+//     $bgColorRight1: #2D2E2E;
+//     $bgColorRight2: #2B2C2C;
+//     $changeThemeBgColor: #2B2C2C;
+
+// }
 
 // BACKGROUND COLORS:
 
@@ -43,4 +63,3 @@ $footerLineColor: #ebe8e8;
 $progressBarBgBottomColor: #ECECEC;
 $lineColor: #535353;
 $textPortfolioColor: #3a3a3a;
-// 

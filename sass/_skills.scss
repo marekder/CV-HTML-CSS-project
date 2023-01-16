@@ -10,7 +10,7 @@
 
     .left {
         width: 36%;
-        background-color: $bgColorLeft2;
+        background-color: var(--bgColorLeft2);
         text-align: right;
         padding-top: 4px;
 
@@ -55,7 +55,7 @@
 
     .right {
         width: 64%;
-        background-color: $bgColorRight2;
+        background-color: var(--bgColorRight2);
         display: flex;
         padding: 20px 50px 20px 50px;
 
