@@ -58,6 +58,7 @@
             line-height: 1.7;
             opacity: 0.8;
             text-align: justify;
+            color: #939393;
 
             @include breakpoint('large') {
                 font-size: 1.1em;
