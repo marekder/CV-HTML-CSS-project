@@ -9,7 +9,7 @@
 
     .left {
         width: 36%;
-        background-color: $bgColorLeft1;
+        background-color: var(--bgColorLeft1);
         text-align: right;
         padding-top: 1%;
 
@@ -47,7 +47,7 @@
         width: 64%;
         background-color: #fff;
         padding: 20px 50px 20px 50px;
-        background-color: $bgColorRight1;
+        background-color: var(--bgColorRight1);
 
         @include breakpoint('large') {
             width: 100%;
@@ -154,8 +154,8 @@
                         width: 40px;
                         height: 40px;
                         border-radius: 5px;
-                        border: 2px solid #EDEDED;
-                        background-color: #EDEDED;
+                        border: 2px solid var(--socialBoxColor);
+                        background-color: var(--socialBoxColor);
                         text-align: center;
                         line-height: 35px;
                         color: #C6C6C6;
@@ -165,7 +165,7 @@
 
                         &:hover {
                             color: $mainColor;
-                            background-color: #fff;
+                            background-color: var(--socialHoverColor);
                             transition: 400ms;
                             animation-duration: 3s;
 

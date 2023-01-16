@@ -10,7 +10,7 @@
 
     .left {
         width: 36%;
-        background-color: $bgColorLeft1;
+        background-color: var(--bgColorLeft1);
         text-align: right;
         padding-top: 4px;
 
@@ -58,7 +58,7 @@
         display: flex;
         flex-wrap: wrap;
         padding: 20px 40px 20px 50px;
-        background-color: $bgColorRight1;
+        background-color: var(--bgColorRight1);
 
         @include breakpoint('large') {
             width: 100%;
@@ -87,24 +87,25 @@
                 position: absolute;
                 top: 10%;
                 left: 5%;
-                // translate: -100% -50%;
-                color: #ffffff;
                 font-size: 20px;
                 font-weight: 700;
                 z-index: 4;
                 opacity: 0;
                 text-transform: uppercase;
-                color: $textPortfolioColor;
+
+                @include breakpoint('large') {
+                    opacity: 1;
+                    color: #fff;
+
+                }
+
             }
 
             &:hover .title {
                 display: block;
-                // left: 50%;
-                // translate: -50% -50%;
-                // transition: 300ms;
                 opacity: 1;
                 transition: 500ms;
-                color: #000;
+                color: var(--portfolioDescColor);
 
             }
 
@@ -115,8 +116,16 @@
                 display: inline;
                 position: absolute;
                 z-index: 4;
-                top: 20%;
+                top: 22%;
                 left: 5%;
+
+                @include breakpoint('large') {
+                    width: 15%;
+                    background-color: #fff;
+
+
+                }
+
             }
 
             &:hover .line {
@@ -126,7 +135,7 @@
                 transition-delay: 0s;
                 transition-property: all;
                 width: 15%;
-
+                background-color: var(--portfolioDescColor);
 
             }
 
@@ -137,14 +146,20 @@
                 color: #ffffff;
                 z-index: 4;
                 opacity: 0;
-                color: $textPortfolioColor;
+
+                @include breakpoint('large') {
+                    opacity: 1;
+                    color: #fff;
+
+                }
+
 
             }
 
             &:hover p {
                 opacity: 1;
                 transition: 500ms;
-                color: #000;
+                color: var(--portfolioDescColor);
             }
 
 

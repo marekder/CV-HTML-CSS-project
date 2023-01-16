@@ -2,16 +2,19 @@
 
     display: block;
     position: fixed;
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     text-align: center;
     border-radius: 50%;
-    background-color: $changeThemeBgColor;
-    line-height: 40px;
+    background-color: var(--changeThemeBgColor);
+    line-height: 30px;
+    font-size: large;
+    margin: 10px;
 
-    .change-theme {
+    i {
 
-        color: $changeThemeColor;
+        // color: var(--changeThemeColor);
+        color: var(--bgColorRight1);
     }
 }
 
@@ -21,6 +24,7 @@
 
         .fa-sun {
             display: none;
+
         }
     }
 }
@@ -35,3 +39,5 @@
         }
     }
 }
+
+// 
