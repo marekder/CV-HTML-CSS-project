@@ -7,6 +7,16 @@ body {
 
 }
 
+body.light {
+    background-color: #fff;
+}
+
+body.dark {
+    background-color: var(--bgColorLeft2);
+}
+
+
+
 a {
     text-decoration: none;
 }
