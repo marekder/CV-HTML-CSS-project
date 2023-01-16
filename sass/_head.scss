@@ -171,12 +171,12 @@
                     width: 40px;
                     height: 40px;
                     border-radius: 5px;
-                    border: 2px solid #EDEDED;
-                    background-color: #EDEDED;
+                    border: 2px solid var(--socialBoxColor);
+                    background-color: var(--socialBoxColor);
                     text-align: center;
                     line-height: 35px;
                     color: #C6C6C6;
-                    transition: 800ms;
+                    transition: 400ms;
                     font-size: 1.3em;
 
                     @include breakpoint('large') {
@@ -189,7 +189,7 @@
 
                     &:hover {
                         color: $mainColor;
-                        background-color: #fff;
+                        background-color: var(--socialHoverColor);
                         transition: 400ms;
                         animation-duration: 3s;
 
