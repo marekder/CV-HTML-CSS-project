@@ -13,9 +13,9 @@ let options = {
 
 let typed = new Typed(".typed", options);
 
-let themeSwitcher = document.querySelector(".change-theme");
-let body = document.body;
-let storedTheme = localStorage.getItem("theme");
+const themeSwitcher = document.querySelector(".change-theme");
+const body = document.body;
+const storedTheme = localStorage.getItem("theme");
 
 if (storedTheme) {
   body.className = storedTheme;

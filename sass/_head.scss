@@ -14,7 +14,7 @@
 
         @include breakpoint('large') {
             width: 100%;
-            background-color: #fff;
+            background-color: var(--bgColorRight1);
             transition: 500ms;
             height: 40vh;
         }
